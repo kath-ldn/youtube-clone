@@ -1,0 +1,506 @@
+#page-container, body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER AND CONTENT */
+#main-header{
+    position: fixed;
+    top: 0;
+    height: 57px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#yt-menu-logo-container, #profile-container, #search-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+#hamburger-container {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-layer {
+     height: 2px;
+     width: 20px;
+     background-color: #666666;
+     margin: 2px;
+     border-radius: 20%;
+}
+
+#yt-header-logo {
+    height:18px;
+    margin-left: 20px;
+}
+
+.icons {
+    height: 24px;
+    margin: 0 20px 0 20px;
+}
+
+#search-text {
+    border: 1px solid rgb(196, 196, 196);
+    height: 25px;
+    width: 570px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(157, 157, 157);
+}
+
+#search-submit {
+    background-color: rgb(249, 247, 251);
+    border: 1px solid rgb(196, 196, 196);
+    height: 27px;
+    border-left: none;
+    display: flex;
+    align-items: center;
+}
+
+#search-icon {
+    height: 20px;
+}
+
+#grid-container {
+    height: 21px;
+    width: 21px;
+    margin-left: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.grid-square {
+    width: 4px;
+    height: 4px;
+    background-color: #666666;
+    margin: 0;
+    border-radius: 10%;
+}
+
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#content-container {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+#video-column {
+    background-color: rgb(244, 244, 244);
+    min-width: 650px;
+    width: 64vw;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#video-player-container {
+    min-width: 600px;
+    width: 63vw;
+    min-height: 337.5px;
+    height: 36.5625vw;
+    margin: 1vw;
+}
+
+#video-player {
+    width: 100%;
+    height: 100%;
+}
+
+#video-description{
+    background-color: yellow;
+}
+
+#thumbnails-container {
+    background-color: rgb(244, 244, 244);
+    min-height: 100vw;
+    width: 34vw;
+    margin: 0;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#video-title{
+    font-size: 18px;
+    margin: 1vw;
+    margin-top: 0.8vw;
+    color: #212121;
+}
+
+#video-nav{
+    margin: 1vw;
+    margin-top: 0.1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 600px;
+    width: 65vw;
+    justify-content: space-between;
+}
+
+#views-date{
+    font-size: 16px;
+    padding-right: 5vw;
+    color: #666666;
+}
+
+#video-stats {
+    width: 400px;
+    display: flex;
+    align-self: flex-end;
+}
+
+#video-stats:hover {
+    cursor: pointer;
+}
+
+.divider {
+    border: 1px rgb(221, 221, 221) solid;
+    min-width: 600px;
+    width: 65vw;
+    align-self: center;
+    padding-left: 0;
+}
+
+#contributor-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin: 15px;
+}
+
+#contributor-pic {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+#contributor-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+}
+
+#contributor-stats {
+    font-size: 15px;
+    height: fit-content;
+    line-height: 60%;
+    margin-top: 20px;
+}
+
+#contributor-name{
+    font-weight: bold;
+}
+
+#contributor-subscribers {
+    color: #666666;
+    font-size: 14px;
+}
+
+#subscribe-button {
+    background-color: #ce0404;
+    color: white;
+    font-size: 15px;
+    padding: 10px 18px 10px 18px;
+    margin-left: 0vw;
+}
+
+
+#video-caption{
+    line-height: 23px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+#show-more{
+    font-size: 14px;
+    color: #666666;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+#comment-label{
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+    align-items: center;
+}
+
+#comment-number{
+    font-size: 18px;
+}
+
+#sort-by{
+    width: fit-content;
+    margin-left: 40px;
+}
+
+#sort-by-icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.sort-by-component {
+     height: 2px;
+     background-color: #666666;
+     margin: 2px;
+     border-radius: 20%;
+}
+
+#sort-by-component-1 {
+    width: 22px;
+}
+#sort-by-component-2 {
+    width: 16px;
+}
+
+#sort-by-component-3 {
+    width: 8px;
+}
+
+#sort-by-text {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#comments{
+    margin: 1vw;
+}
+
+#comment-default{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#add-comment-user {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666666;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+#comment-divider{
+    width: 61vw;
+    margin-top: 8px;
+}
+
+.comment-pic{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.add-comment {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666666;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.comment-stats{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-text{
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.comment-name{
+    font-weight: bold;
+}
+
+.comment-time{
+    color: #666666;
+    padding-left: 10px;
+}
+
+.comment-likes{
+    display: flex;
+    align-items: center;
+}
+
+.vote{
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+}
+
+.vote:hover {
+    cursor: pointer;
+}
+
+.upvotes, .reply{
+    color: #666666;
+    font-size: 13px;
+    padding-right: 15px;
+}
+
+#ad{
+    width: 35vw;
+    margin-left: 10px;
+    margin-top: 0.3vw;
+}
+
+#ad-img{
+    width: 30vw;
+    margin-top: 10px;
+}
+
+#ad-logo{
+    width: 50px;
+    height: 50px;
+}
+
+#ad-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+#ad-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#ad-details{
+    margin-left: 10px;
+}
+
+#ad-web-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666666;
+}
+
+#ad-highlight{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(252, 199, 65);
+    padding: 1px 3px 1px 3px;
+    width: fit-content;
+    margin-right: 5px;
+}
+
+#shop-now{
+    background-color: #065ad0;
+    color: white;
+    font-size: 15px;
+    padding: 10px 18px 10px 18px;
+    display: flex;
+    margin: auto;
+    align-self: flex-end;
+}
+
+#thumbnails {
+    width: 30vw;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#thumbnails-divider {
+    min-width: 30vw;
+    max-width: 30vw;
+    background-color: red;
+    margin-top: 10px;
+    margin-left: 0;
+    align-self: auto;
+    margin-left: 10px;
+
+}
+
+.thumbnail{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin-bottom: 8px;
+}
+
+.thumb-pic {
+    width: 175px;
+}
+
+.thumb-text {
+    margin-left: 8px;
+    width: 18vw;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.thumb-title {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.thumb-detail {
+    color: #666666;
+}
+
+/*
+YouTube Red: #FF0000
+White: #FFFFFF
+Almost Black: #212121
+*/
