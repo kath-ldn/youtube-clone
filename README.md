@@ -1,9 +1,38 @@
-# YOUTUBE DUPE USING ONLY HTML/CSS
+# Youtube Clone
 
-This is a basic replica of Youtube using only HTML and CSS, to refresh my understanding of positioning elements including video and images on a webpage. This is part of The Odin Project HTML and CSS module.
+## About
 
-### Known issues
-- Currently when resizing the thumbnails section falls after the video column rather than before.
-- Responsiveness could be improved - the video doesn't fill the whole page when resizing, for example.
-  - Both of these issues are to do with Responsiveness - to revisit in learning.
-- Some icons used are sprites/techniques I haven't learnt yet - so I've made them as images instead. Pls forgive me!
+This is basic replica of Youtube using only HTML and CSS, which I built as part of The Odin Project HTML and CSS module. The objective of this was to refresh my understanding of positioning elements, specifically images and videos.
+
+### Live Demo
+
+To add github pages
+
+### Built with
+
+HTML & CSS.
+
+## Prerequisites & Installation
+
+No special requirements.
+
+## Roadmap
+
+None planned - this was a learning project
+
+### Known Issues
+
+* I didn't use a reset sheet - this may lead to some issues in different browsers (I'm using Chrome).
+* I built this before I covered grid/flexbox in detail, and responsive layouts - so the responsiveness is not perfect.
+  * For example, in actual Youtube the Thumbnails (right) section falls under the video rather than under the comments when the screen is narroweed below 1015px. If I were to re-do this I would either use grid to allow me to re-order items, or have the relevant sections in one Flexbox and change the flex order.
+* Icons used are low quality jpgs rather than SVGs/sprites used on Youtube so they aren't optimal quality. If I were doing this again I would use the proper SVGs/sprites (finding them using Dev Tools).
+
+## Acknowledgements
+
+* Youtube 
+* CSS-tricks
+* GitHub pages
+* google fonts
+
+I do not own any copyright or rights to the material here.
+

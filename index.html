@@ -10,178 +10,175 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="page-container">
-        <header id="main-header">
-            <div id="yt-menu-logo-container">
-                <div id="hamburger-container">
-                    <div class="hamburger-layer"></div>
-                    <div class="hamburger-layer"></div>
-                    <div class="hamburger-layer"></div>
-                </div>
-                <img src="assets/yt-header-logo.png" id="yt-header-logo">
+    <nav>
+        <div id="yt-menu-logo-container" class="nav-container">
+            <div id="hamburger-container" class="hover">
+                <div class="hamburger-layer"></div>
+                <div class="hamburger-layer"></div>
+                <div class="hamburger-layer"></div>
             </div>
-            <div id="search-container">
-                <input type="text" id="search-text" placeholder="Search"/>
-                <div type="submit" id="search-submit">
-                    <img src="assets/search.png" id="search-icon" class="icons">
-                </div>
-                <img src="assets/mic.png" id="mic-icon" class="icons">
+            <img src="assets/yt-header-logo.png" id="yt-header-logo" class="hover">
+        </div>
+        <div id="search-container" class="nav-container">
+            <input type="text" id="search-text" placeholder="Search"/>
+            <div type="submit" id="search-submit"  class="hover">
+                <img src="assets/search.png" id="search-icon" class="icons">
             </div>
-            <div id="profile-container">
-                <img class="icons" src="assets/camera.png" id="camera">
-                <div id="grid-container" class="icons">
-                    <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
-                    <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
-                    <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
-                </div>
-                <img class="icons" src="assets/bell.png" id="bell">
-                <img src="assets/profile-pic.jpg" class="profile-pic">
+            <img src="assets/mic.png" id="mic-icon" class="icons hover">
+        </div>
+        <div id="profile-container" class="nav-container">
+            <img class="icons hover" src="assets/camera.png" id="camera">
+            <div id="grid-container" class="icons hover" >
+                <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
+                <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
+                <div class="grid-square"></div><div class="grid-square"></div><div class="grid-square"></div>
             </div>
-            </header>
-        <div id="content-container">
+            <img class="icons hover" src="assets/bell.png" id="bell">
+            <img src="assets/profile-pic.jpg" class="profile-pic hover">
+        </div>
+    </nav>
+        <main id="content-container">
             <div id="video-column">
                 <div id="video-player-container">
                     <iframe id="video-player" src="https://www.youtube.com/embed/i1gVxKhdGPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div id="video-description"></div>
+                <div id="video-description" class="bottom-divider">
                     <div id="video-title">
                         Four Tet - Baby (Official Music Video)
                     </div>
-                    <div id="video-nav">
+                    <div id="video-nav" class="bottom-divider">
                         <div id="views-date">1,207,170 views &#8226 Premiered Feb 27, 2020</div>
-                        <img src="assets/video-stats.png" id="video-stats">
+                        <img src="assets/video-stats.png" id="video-stats" class="hover">
                     </div>
-                    <div class="divider"></div>
                     <div id="contributor-container">
                         <div id="contributor-pic-container">
-                            <img src="assets/four-tet.jpg" id="contributor-pic">
+                            <img src="assets/four-tet.jpg" id="contributor-pic" class="hover">
                         </div>
                         <div id="contributor-detail">
                             <div id="contributor-stats">
-                                    <div id="contributor-name">Four Tet ♪</div><br>
-                                    <div id="contributor-subscribers">54K subscribers</div>
-                                    <div id="video-caption">
-                                        Music by Four Tet, vocals by Ellie Goulding<br>
-                                        Listen: https://smarturl.it/FourTetBaby​<br>
-                                        Teenage Birdsong: https://www.youtube.com/watch?v=jXSHE...<br>
-                                        <b id="show-more">SHOW MORE</b>
-                                    </div>
+                                <div id="contributor-name" class="hover">Four Tet ♪</div><br>
+                                <div id="contributor-subscribers">54K subscribers</div>
+                                <div id="video-caption">
+                                    Music by Four Tet, vocals by Ellie Goulding<br>
+                                    Listen: <span class="pseudo-link hover">https://smarturl.it/FourTetBaby</span>​<br>
+                                    Teenage Birdsong: <span class="pseudo-link hover">https://www.youtube.com/watch?v=jXSHE...</span><br>
+                                    <b id="show-more" class="hover">SHOW MORE</b>
                                 </div>
-                            <div id="subscribe-button">SUBSCRIBE</div>
+                            </div>
+                            <div id="subscribe-button" class="hover">SUBSCRIBE</div>
                         </div>
                     </div>
-                    <div class="divider"></div>
+                </div>
                 <div id="comments-container"></div>
                     <div id="comment-label">
                         <div id="comment-number">823 Comments</div>
-                        <div id="sort-by"></div>
-                        <div id="sort-by-icon">
+                        <div id="sort-by">
+                        <div id="sort-by-icon" class="hover">
                             <div class="sort-by-component" id="sort-by-component-1"></div>
                             <div class="sort-by-component" id="sort-by-component-2"></div>
                             <div class="sort-by-component" id="sort-by-component-3"></div>
                         </div>
-                        <div id="sort-by-text">SORT BY</div>
+                        <div id="sort-by-text" class="hover">SORT BY</div>
+                        </div>
                     </div>
                     <div id="comments">
                         <div id="comment-default" class="comment">
                                 <img src="assets/profile-pic.jpg" class="comment-pic">
-                            <div id="add-comment-user" class="add-comment">
+                            <div id="add-comment-user">
                                 Add a public comment...
-                                <div id="comment-divider" class="divider"></div>
+                                <div id="comment-divider" class="bottom-divider"></div>
                             </div>
                         </div>
-
                         <div id="comment-1" class="comment">
-                                <img src="assets/profile-side.jpeg" class="comment-pic">
+                            <img src="assets/profile-side.jpeg" class="comment-pic hover">
                             <div class="comment-text">
                                 <div class="comment-stats">
-                                    <div class="comment-name">Chris Amber</div>
-                                    <div class="comment-time">1 month ago</div>
+                                    <div class="comment-name hover">Chris Amber</div>
+                                    <div class="comment-time hover">1 month ago</div>
                                 </div>
                                 <div class="comment-text"></div>
                                 Slamming. So impressed. That drone work is absolutely smashing.
                                 <div class="comment-likes">
-                                    <img src="assets/upvote.png" class="vote">
+                                    <img src="assets/upvote.png" class="vote hover">
                                     <div class="upvotes"> 501 </div>
-                                    <img src="assets/downvote.png" class="vote">
-                                    <div class="upvotes"> REPLY </div>
+                                    <img src="assets/downvote.png" class="vote hover">
+                                    <div class="upvotes hover"> REPLY </div>
                                 </div>
                             </div>
                         </div>
                         <div id="comment-2" class="comment">
-                                <img src="assets/profile-balloon.jpeg" class="comment-pic">
+                            <img src="assets/profile-balloon.jpeg" class="comment-pic hover">
                             <div class="comment-text">
                                 <div class="comment-stats">
-                                    <div class="comment-name">Happy</div>
-                                    <div class="comment-time">3 months ago</div>
+                                    <div class="comment-name hover">Happy</div>
+                                    <div class="comment-time hover">3 months ago</div>
                                 </div>
                                 <div class="comment-text"></div>
                                 That bird scene was so calming and awesome. Just has such a peaceful feeling 💙💙💙
                                 <div class="comment-likes">
-                                    <img src="assets/upvote.png" class="vote">
+                                    <img src="assets/upvote.png" class="vote hover">
                                     <div class="upvotes"> 94 </div>
-                                    <img src="assets/downvote.png" class="vote">
-                                    <div class="upvotes"> REPLY </div>
+                                    <img src="assets/downvote.png" class="vote hover">
+                                    <div class="upvotes hover"> REPLY </div>
                                 </div>
                             </div>
                         </div>
                         <div id="comment-3" class="comment">
-                                <img src="assets/profile-smile.jpeg" class="comment-pic">
+                                <img src="assets/profile-smile.jpeg" class="comment-pic hover">
                             <div class="comment-text">
                                 <div class="comment-stats">
-                                    <div class="comment-name">Sammi T</div>
-                                    <div class="comment-time">4 months ago</div>
+                                    <div class="comment-name hover">Sammi T</div>
+                                    <div class="comment-time hover">4 months ago</div>
                                 </div>
                                 <div class="comment-text"></div>
                                 Ohohoh! The ending!! Fantastic
                                 <div class="comment-likes">
-                                    <img src="assets/upvote.png" class="vote">
+                                    <img src="assets/upvote.png" class="vote hover">
                                     <div class="upvotes"> 742 </div>
-                                    <img src="assets/downvote.png" class="vote">
-                                    <div class="upvotes"> REPLY </div>
+                                    <img src="assets/downvote.png" class="vote hover">
+                                    <div class="upvotes hover"> REPLY </div>
                                 </div>
                             </div>
                         </div>
                         <div id="comment-4" class="comment">
-                                <img src="assets/profile-serious.jpeg" class="comment-pic">
+                                <img src="assets/profile-serious.jpeg" class="comment-pic hover">
                             <div class="comment-text">
                                 <div class="comment-stats">
-                                    <div class="comment-name">Ali S</div>
-                                    <div class="comment-time">5 months ago</div>
+                                    <div class="comment-name hover">Ali S</div>
+                                    <div class="comment-time hover">5 months ago</div>
                                 </div>
                                 <div class="comment-text"></div>
                                 Literally just found this song yesterday and I was entranced. Music video out the next day...absolute golddddd 🔥😍
                                 <div class="comment-likes">
-                                    <img src="assets/upvote.png" class="vote">
+                                    <img src="assets/upvote.png" class="vote hover">
                                     <div class="upvotes"> 673 </div>
-                                    <img src="assets/downvote.png" class="vote">
-                                    <div class="upvotes"> REPLY </div>
+                                    <img src="assets/downvote.png" class="vote hover">
+                                    <div class="upvotes hover"> REPLY </div>
                                 </div>
                             </div>
                         </div>
                         <div id="comment-5" class="comment">
-                            <img src="assets/profile-abstract.jpeg" class="comment-pic">
+                            <img src="assets/profile-abstract.jpeg" class="comment-pic hover">
                         <div class="comment-text">
                             <div class="comment-stats">
-                                <div class="comment-name">Pierre M</div>
-                                <div class="comment-time">6 months ago</div>
+                                <div class="comment-name hover">Pierre M</div>
+                                <div class="comment-time hover">6 months ago</div>
                             </div>
                             <div class="comment-text"></div>
                             Hooked on this song as soon as you released it in January 2020.<br> 
-And absolutely incredible camera work with the drone, the op is making it more than a skill—it’s an art!
+                            And absolutely incredible camera work with the drone, the op is making it more than a skill—it’s an art!
                             <div class="comment-likes">
-                                <img src="assets/upvote.png" class="vote">
+                                <img src="assets/upvote.png" class="vote hover">
                                 <div class="upvotes"> 54 </div>
-                                <img src="assets/downvote.png" class="vote">
-                                <div class="upvotes"> REPLY </div>
+                                <img src="assets/downvote.png" class="vote hover">
+                                <div class="upvotes hover"> REPLY </div>
                             </div>
                         </div>
-                    </div>
-                        
-                    </div>
+                    </div>        
+                </div>
             </div>
             <div id="thumbnails-container">
-                <div id="ad">
+                <div id="ad" class="hover">
                     <img src="assets/asos-img.jpg" id="ad-img">
                     <div id="ad-content">
                         <img src="assets/asos-icon.jpg" id="ad-logo">
@@ -205,15 +202,14 @@ And absolutely incredible camera work with the drone, the op is making it more t
                         </div>
                     </div>
                 </div>
-                <div class="divider" id="thumbnails-divider"></div>
-                <div id="thumbnails">
+                <div id="thumbnails" class="top-divider">
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-1-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-1-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Four Tet | Boiler Room: Streaming From Isolation | #88
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                 Boiler Room<br>
                                 747K views &#8226 Streamed 10 months ago
                                 
@@ -221,12 +217,12 @@ And absolutely incredible camera work with the drone, the op is making it more t
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-2-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-2-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Weval - Someday (Official Video)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                 Weval ♪<br>
                                 1.7M views &#8226 1 year ago
                                 
@@ -234,108 +230,108 @@ And absolutely incredible camera work with the drone, the op is making it more t
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-3-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-3-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Bonobo - 'Black Sands'
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Ninja Tune<br>
                                 4.7M views &#8226 8 years ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-4-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-4-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Burial & Four Tet - Moth
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                kalbarofficial<br>
                                 3.8M views &#8226 11 years ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-5-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-5-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 CARIBOU - Never Come Back
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                CaribouVideos ♪<br>
                                 1.2M views &#8226 1 year ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="/assets/thumb-7-still.jpg">
+                        <img class="thumb-pic hover" src="/assets/thumb-7-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Four Tet Boiler Room London Live Set
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Boiler Room ♪<br>
                                 1.8M views &#8226 5 years ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-8-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-8-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Daft Punk - Get Lucky (Official Audio) ft. Pharrell Williams, Nil
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Daft Punk ♪<br>
                                 544M views &#8226 5 years ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-9-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-9-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Tame Impala - Is It True (Four Tet Remix) (Official Visualiser)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Tame Impala ♪<br>
                                 333K views &#8226 6 months ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-10-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-10-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Phoebe Bridgers - Saviour Complex (Official Video)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Phoebe Bridgers ♪<br>
                                 569K views &#8226 2 months ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-11-still.jpg">
+                        <img class="thumb-pic hover" src="assets/thumb-11-still.jpg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Allie X - Vintage (Lyric Video)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                Allie X ♪<br>
                                 415K views &#8226 2 years ago
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-12-still.jpeg">
+                        <img class="thumb-pic hover" src="assets/thumb-12-still.jpeg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 Jamie xx - Gosh
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                 Jamie xx ♪<br>
                                 19M views &#8226 4 years ago
                                 
@@ -343,12 +339,12 @@ And absolutely incredible camera work with the drone, the op is making it more t
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-13-still.jpeg">
+                        <img class="thumb-pic hover" src="assets/thumb-13-still.jpeg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 The Weeknd - I Feel It Coming ft. Daft Punk (Official Video)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                 The Weeknd ♪<br>
                                 797M views &#8226 3 years ago
                                 
@@ -356,12 +352,12 @@ And absolutely incredible camera work with the drone, the op is making it more t
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img class="thumb-pic" src="assets/thumb-14-still.jpeg">
+                        <img class="thumb-pic hover" src="assets/thumb-14-still.jpeg">
                         <div class="thumb-text">
-                            <div class="thumb-title">
+                            <div class="thumb-title hover">
                                 BICEP | APRICOTS (Official Video)
                             </div>
-                            <div class="thumb-detail">
+                            <div class="thumb-detail hover">
                                 Bicep ♪<br>
                                 2.4M views &#8226 4 months ago
                                 
@@ -370,7 +366,6 @@ And absolutely incredible camera work with the drone, the op is making it more t
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </main>
 </body>
 </html>
