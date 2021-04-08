@@ -2,11 +2,11 @@
 
 ## About
 
-This is basic replica of Youtube using only HTML and CSS, which I built as part of The Odin Project HTML and CSS module. The objective of this was to refresh my understanding of positioning elements, specifically images and videos.
+This is basic replica of Youtube using only HTML and CSS, which I built as part of [The Odin Project HTML and CSS module](https://www.theodinproject.com/paths/full-stack-javascript/courses/html-and-css/lessons/embedding-images-and-video). The objective of this was to refresh my understanding of positioning elements, specifically images and videos.
 
 ### Live Demo
 
-To add github pages
+[GitHub pages](https://kath-ldn.github.io/youtube-clone/)
 
 ### Built with
 
